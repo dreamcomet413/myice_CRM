@@ -33,7 +33,6 @@ end
 
 # Remove premailer auto-require
 gem 'premailer', require: false
-
 # Remove fat_free_crm dependency, to stop it from being auto-required too early.
 remove 'fat_free_crm'
 
@@ -80,9 +79,11 @@ group :heroku do
   gem 'rails_12factor'
 end
 
+gem 'ruby_dep', '1.1', require: 'ruby_dep/quiet'
 gem 'sass-rails'
 gem 'coffee-rails'
 gem 'uglifier'
 gem 'execjs'
 gem 'therubyracer', platform: :ruby unless ENV["CI"]
 gem 'nokogiri', '>= 1.6.8'
+gem 'rails_12factor', group: :production

@@ -11,10 +11,10 @@ Gem::Specification.new do |gem|
   gem.email = ['mike@fatfreecrm.com', 'nathan@fatfreecrm.com', 'warp@fatfreecrm.com', 'steveyken@gmail.com']
   gem.files = `git ls-files`.split("\n")
   gem.version = FatFreeCRM::VERSION::STRING
-  gem.required_ruby_version = '>= 2.0.0'
+  gem.required_ruby_version = '>= 2.3.1'
   gem.license = 'MIT'
 
-  gem.add_dependency 'rails',               '~> 4.2.0'
+  gem.add_dependency 'rails',               '~> 4.2.5'
   gem.add_dependency 'rails-observers'
   # Sprockets 2.2.3 appears to have a bug resolving assets from the engine update to '>= 3.0.0 once released'
   gem.add_dependency 'sprockets-rails',     '2.2.2'
