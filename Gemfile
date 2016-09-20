@@ -79,7 +79,6 @@ group :heroku do
   gem 'rails_12factor'
 end
 
-gem 'ruby_dep', '1.1', require: 'ruby_dep/quiet'
 gem 'sass-rails'
 gem 'coffee-rails'
 gem 'uglifier'
